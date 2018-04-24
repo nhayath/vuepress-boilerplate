@@ -1,17 +1,25 @@
 <template>
     <div class="theme-container">
+
+        <!-- navbar -->
+        <navbar></navbar>
+
+        <!-- content -->
         <Content/>
+
+        <!-- footer -->
+        
     </div>
 </template>
 
 <script>
-    import './style.scss';
 
     export default {
-        
+
+        mounted(){
+            document.title = this.$page.title;
+        }
     }
 </script>
 
-<style scoped>
-
-</style>
+<style src="./style.scss" lang="scss"></style>
